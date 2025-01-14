@@ -1,4 +1,4 @@
--- luaenjoy
+-- AdvanceFalling Team
 -- Some are scripts were modify to be toggleable :3
 
 -- ALSO im sorry if this arsenal script have messy codes in it, I will try to make it organized in the future if im not lazy. 
@@ -29,14 +29,14 @@ TODO:
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-  Title = "SoloHub Arsenal",
+  Title = "AdvanceTech Arsenal",
   Text = "Working For Mobile and PC Executor",
   Duration = 8,
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "Modify By:",
-  Text = "lua enjoyer",
+  Text = "AdvancedFalling Team",
   Icon = "rbxthumb://type=Asset&id=13508183954&w=150&h=150",
   Duration = 8,
 })
@@ -60,10 +60,10 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bitef4/Recode/main/UI/Kavo_1.lua"))()
-local Window = Library.CreateLib("SoloHub | Arsenal | v1.0 ", "Midnight")
+local Window = Library.CreateLib("AdvanceTech | Arsenal | v1.7 ", "BlueTheme")
 
 local Welcome = Window:NewTab("Main")
-local MainSection = Welcome:NewSection("Welcome To SoloHub | " .. game.Players.LocalPlayer.Name)
+local MainSection = Welcome:NewSection("Welcome To AdvanceTech | " .. game.Players.LocalPlayer.Name)
 
 local HitboxSection = Welcome:NewSection("> Hitbox Settings <")
 local triggerbot = Welcome:NewSection("> Triggerbot <")
@@ -1096,7 +1096,7 @@ local function enableParticles()
   local runLoop = false
   
   local function names()
-      local edited_name = "YOOO SUPPP UwU"
+      local edited_name = "AdvanceChan UwU"
       local edited_killfeed = "UwU im a horny femboy who needs a big BBC"
   
       local gui = LocalPlayer.PlayerGui
@@ -1110,7 +1110,7 @@ local function enableParticles()
       Workspace.KillFeed["5"].Killer.Value = edited_killfeed
       Workspace.KillFeed["6"].Killer.Value = edited_killfeed
       gui.GUI.Winner.Visible = false
-      gui.GUI_Scorecard.Scorecard.PlayerCard.Username.Text = "luaenjoy"
+      gui.GUI_Scorecard.Scorecard.PlayerCard.Username.Text = "AdvanceFalling Team"
   end
   
   local function restores_name()
@@ -1575,17 +1575,21 @@ end)
 
 local Credit = Window:NewTab("Credits")
 local Section = Credit:NewSection("Credits")
-local Section = Credit:NewSection("Script Developed by: luaenjoy")
-Section:NewDropdown("Developer", "Dev", {"luaenjoy"}, function(currentDeveloper)
+local Section = Credit:NewSection("Script Developed by: AdvanceFalling Team")
+Section:NewDropdown("Developer", "Dev", {"YellowGreg", "WspBoy12", "MMSVon", "ShadowClark", "Frostbite"}, function(currentDeveloper)
     local creations = {
-        luaenjoy = "Owner",
+        YellowGreg = "Owner",
+        WspBoy12 = "Head Developer",
+        MMSVon = "Head Developer",
+        ShadowClark = "Head Developer",
+        Frostbite = "Head Developer",
     }
     print(currentDeveloper .. " created " .. creations[currentDeveloper])
 end)
-local Section = Credit:NewSection("UI Framework: dontme.")
+local Section = Credit:NewSection("UI Framework: Kavo.")
 local Section = Credit:NewSection("Report Non-Functional Bugs Scripts on Discord")
 Section:NewButton("Copy Discord Link", "Discord", function()
-    setclipboard("luaenjoy)
+    setclipboard("https://discord.com/invite/d2446gBjfq")
 end)
 
 
