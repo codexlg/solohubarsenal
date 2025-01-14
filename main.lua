@@ -1,42 +1,15 @@
--- AdvanceFalling Team
--- Some are scripts were modify to be toggleable :3
-
--- ALSO im sorry if this arsenal script have messy codes in it, I will try to make it organized in the future if im not lazy. 
-
---[[
-⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄ ⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄
-⢸⣇⠻⣿⣿⣿⣧⣀⢀⣠⡌⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⣿⣿⣿⠄⢸⣿⣷⣤⣤⣤⣬⣙⣛⢿⣿⣿⣿⣿⣿⣿⡿⣿⣿⡍⠄⠄⢀⣤⣄⠉⠋⣰
-⣖⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⢇⣿⣿⡷⠶⠶⢿⣿⣿⠇⢀⣤ ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣷⣶⣥⣴⣿⡗ 
-⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠄ ⣦⣌⣛⣻⣿⣿⣧⠙⠛⠛⡭⠅⠒⠦⠭⣭⡻⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄ 
-⣿⣿⣿⣿⣿⣿⣿⡆⠄⠄⠄⠄⠄⠄⠄⠄⠹⠈⢋⣽⣿⣿⣿⣿⣵⣾⠃⠄ ⣿⣿⣿⣿⣿⣿⣿⣿⠄⣴⣿⣶⣄⠄⣴⣶⠄⢀⣾⣿⣿⣿⣿⣿⣿⠃⠄⠄ 
-⠈⠻⣿⣿⣿⣿⣿⣿⡄⢻⣿⣿⣿⠄⣿⣿⡀⣾⣿⣿⣿⣿⣛⠛⠁⠄⠄⠄ ⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴ ⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣠
-]]
-
-
---[[
-New stuff added:
- - Triggerbot Added
- - DeadHP & DeadAmmo changed into dropdown
- - Improved the autofarm a little
-
-TODO:
- - add aimbot
- - need new esp library
- - other stuff i need to add but forgotten
-]]--
 
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-  Title = "AdvanceTech Arsenal",
+  Title = "SoloHub Arsenal",
   Text = "Working For Mobile and PC Executor",
   Duration = 8,
 })
 
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "Modify By:",
-  Text = "AdvancedFalling Team",
+  Text = "SoloHub Team",
   Icon = "rbxthumb://type=Asset&id=13508183954&w=150&h=150",
   Duration = 8,
 })
@@ -60,10 +33,10 @@ game:GetService("RunService").Heartbeat:connect(function(step)if flying and c an
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bitef4/Recode/main/UI/Kavo_1.lua"))()
-local Window = Library.CreateLib("AdvanceTech | Arsenal | v1.7 ", "BlueTheme")
+local Window = Library.CreateLib("SoloHub | Arsenal | v1.7 ", "Midnight")
 
 local Welcome = Window:NewTab("Main")
-local MainSection = Welcome:NewSection("Welcome To AdvanceTech | " .. game.Players.LocalPlayer.Name)
+local MainSection = Welcome:NewSection("Welcome To SoloHub | " .. game.Players.LocalPlayer.Name)
 
 local HitboxSection = Welcome:NewSection("> Hitbox Settings <")
 local triggerbot = Welcome:NewSection("> Triggerbot <")
@@ -1576,20 +1549,20 @@ end)
 local Credit = Window:NewTab("Credits")
 local Section = Credit:NewSection("Credits")
 local Section = Credit:NewSection("Script Developed by: AdvanceFalling Team")
-Section:NewDropdown("Developer", "Dev", {"YellowGreg", "WspBoy12", "MMSVon", "ShadowClark", "Frostbite"}, function(currentDeveloper)
+Section:NewDropdown("Developer", "Dev", {"Luaenjoy", "Luaenjoy", "Luaenjoy", "Luaenjoy", "Luaenjoy"}, function(currentDeveloper)
     local creations = {
-        YellowGreg = "Owner",
-        WspBoy12 = "Head Developer",
-        MMSVon = "Head Developer",
-        ShadowClark = "Head Developer",
-        Frostbite = "Head Developer",
+        Luaenjoy = "Owner",
+        Luaenjoy = "Head Developer",
+        Luaenjoy = "Head Developer",
+        Luaenjoy = "Head Developer",
+        Luaenjoy = "Head Developer",
     }
     print(currentDeveloper .. " created " .. creations[currentDeveloper])
 end)
-local Section = Credit:NewSection("UI Framework: Kavo.")
+local Section = Credit:NewSection("UI Framework: juaenjoy.")
 local Section = Credit:NewSection("Report Non-Functional Bugs Scripts on Discord")
 Section:NewButton("Copy Discord Link", "Discord", function()
-    setclipboard("https://discord.com/invite/d2446gBjfq")
+    setclipboard("luaenjoy")
 end)
 
 
